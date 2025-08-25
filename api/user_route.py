@@ -11,3 +11,5 @@ user_repo = UsuarioRepository(DB_PATH)
 user_service = UsuarioService(user_repo)
 
 @user_api.route('/user/create', methods=['POST'])
+def create_user():
+    return
