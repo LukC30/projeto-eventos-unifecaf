@@ -7,7 +7,6 @@ class EventoModel():
     nome: str
     data: str
     descricao: str
-    criador: int
     max_participantes: int
     id: Optional[int] = None    
 

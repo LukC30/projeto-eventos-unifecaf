@@ -16,7 +16,7 @@ def create_database():
 
         # --- Tabela de Eventos ---
         cursor.execute("""
-        CREATE TABLE IF NOT EXISTS tbl_evento (
+        CREATE TABLE IF NOT EXISTS tbl_eventos (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 nome TEXT NOT NULL,
                 data TEXT NOT NULL,

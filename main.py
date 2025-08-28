@@ -1,7 +1,7 @@
 from flask import Flask
 
-from api.event_route import event_api
-from api.user_route import user_api
+from .api.event_route import event_api
+from .api.user_route import user_api
 
 def create_app():
     """

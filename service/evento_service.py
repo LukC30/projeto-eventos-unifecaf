@@ -51,7 +51,7 @@ class EventoService():
     def delete_event(self, event_id: int):
 
         try:
-            deleted_event = self._repo.delete_event()
+            deleted_event = self._repo.delete_event(event_id)
             logging.info(f"Evento de id: '{event_id}' foi deletado")
             return deleted_event
         

@@ -3,7 +3,8 @@ import logging
 from ..repository.usuario_repository import UsuarioRepository
 from ..models.usuario_model import UsuarioModel
 
-logging.info(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
 class UsuarioService():
     def __init__(self, repo: UsuarioRepository):
         self._repo = repo

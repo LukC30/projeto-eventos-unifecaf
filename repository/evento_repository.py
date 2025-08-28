@@ -90,7 +90,7 @@ class EventoRepository():
         conn.row_factory = sqlite3.Row
         cursor = conn.cursor()
 
-        sql = """update from tbl_evento set data = ?, descricao = ?, criador = ? where id = ?"""
+        sql = """update tbl_evento set data = ?, descricao = ?, criador = ? where id = ?"""
         try:
             cursor.execute(sql, (
                 event.data,
